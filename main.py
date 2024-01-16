@@ -22,23 +22,39 @@
 
 
 
-number=int(input("input number: "))
-is_prime=True
+# number=int(input("input number: "))
+# is_prime=True
+#
+# if number<2:
+#     print(f'{number} is not prime number')
+# else:
+#     i=2
+#     while i<number:
+#         if number%i==0:
+#             is_prime=False
+#             break
+#         i+=1
+#     if is_prime:
+#         print(f'{number} is prime number')
+#     else:
+#         print(f'{number} is not prime number')
+#
 
-if number<2:
-    print(f'{number} is not prime number')
-else:
-    i=2
-    while i<number:
-        if number%i==0:
-            is_prime=False
-            break
-        i+=1
-    if is_prime:
-        print(f'{number} is prime number')
-    else:
-        print(f'{number} is not prime number')
 
+univ="inha"
 
+i=0
+while i<len(univ):
+    print(univ[i],end='')
+    i+=1
 
+print()
+
+for letter in univ:
+    print(letter,end='')
+
+print()
+
+for i in range(len(univ)):
+    print(univ[i],end='')
 
