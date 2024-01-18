@@ -1,20 +1,19 @@
 
 
 
-#9.1
-# list=['Harry','Ron','Hermione']
-#
-# def good():
-#     return list
-# print(good())
+def document_it(func):
+    def new_function(*args,**kwargs):
+        print("Running function:",func.__name__)
+        print("Positional arguments:",args)
+        print("Keyword argument:",kwargs)
+        result=func(*args,**kwargs)
+        print("Result:",result)
+        return result
+    return new_function
 
 
-#9.2
-# def get_odds(n):
-#     list=[]
-#     for i in range(10):
-#         if i%2==1:
-#             list.append(i)
-#     yield list[n-1]
-#
-# print(get_odds(3))
+def add_ints(a,b):
+    return a+b
+cooler_add_ints=document_it(add_ints)
+
+cooler_add_ints(3,5)
