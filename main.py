@@ -1,20 +1,20 @@
 
 
 
-
-
-
-def add(*args):
-    print(args)
-    print(*args)   #언패킹
-    return sum(args)
-
-print(add(1,3,8))
-
-# def run_something_with_args(func,*args):
-#     return func(*args)
+#9.1
+# list=['Harry','Ron','Hermione']
 #
-# print(run_something_with_args(add,1,3,8))
+# def good():
+#     return list
+# print(good())
 
-print(sum((1,2,4)))
 
+#9.2
+# def get_odds(n):
+#     list=[]
+#     for i in range(10):
+#         if i%2==1:
+#             list.append(i)
+#     yield list[n-1]
+#
+# print(get_odds(3))
