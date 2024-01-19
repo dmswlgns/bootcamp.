@@ -1,81 +1,120 @@
-
-
-
-
-
-
-# def f(n):
-#     result=1
-#     for i in range(2,n+1):
-#         result=result*i
-#     return result
+# class Cat():
+#     def __init__(self,name,age,nemsis):
+#         self.name=name
+#         self.age=age
+#         self.nemsis=nemsis
+# a_cat=Cat("totoro",4,'another_cat')
+# another_cat=Cat("mimi",5,'another_cat')
 #
-# print(f(int(input())))
-
-
-import random
-
-# numbers=[]
-# for i in range(5):
-#     numbers.append(random.randint(1,100))
-
-# numbers=[random.randint(1,100) for i in range(10)]
-# print(numbers)
-# try:
-#     pick=int(input(f"Input index (0~{len(numbers)-1}) :"))
+# furball=Cat('Frumpy',8,'another_cat')
 #
-#     print(numbers[pick])
-# except IndexError:
-#     print("Out of range : Wrong index number")
-# except ValueError:
-#     print("Input Only Number~~")
-# except Exception:
-#     print("Error occurs")
-
-
-# def desc():
-#     def wrapper():
-#         print("w")
-#     print("a")
-# #    return wrapper
-# #desc()
+# print(furball.name)
+# print(a_cat.name)
+# print(another_cat.name)
+#
+# print(furball.age)
+# print(a_cat.age)
+# print(another_cat.age)
 #
 #
-# def something():
-#     print("do something~~")
+# print(furball.nemsis)
+# print(a_cat.nemsis)
+# print(another_cat.nemsis)
 #
-# something()
+# print(type(furball))
+#
+#
+# # print(a_cat.age)
+# # print(a_cat.name)
+# # print(a_cat.nemsis.name)
+
+# class Car():
+#     def exclamin(self):
+#         print("Im a car")
+# class Yogo(Car):
+#     def exclamin(self):
+#         print("im a Yogo")
+#     def need_a_push(self):
+#         print("need help")
+#
+# car1=Car()
+# car2=Yogo()
+#
+# car1.exclamin()
+# car2.exclamin()
+#
+# car2.need_a_push()
+
+
+# class Person():
+#     def __init__(self,name):
+#         self.name=name
+# class MDPerson(Person):
+#     def __init__(self,name):
+#         self.name="Doctor"+ " "+name
+# class JDPerson(Person):
+#     def __init__(self, name):
+#         self.name = name+" Esquire"
+#
+# eun=MDPerson("eun")
+#
+# print(eun.name)
+#
+# kim=JDPerson("kim")
+#
+# print(kim.name)
+#
+# park=Person("park")
+#
+# print(park.name)
+
+# class Person():
+#     def __init__(self,name):
+#         self.name=name
+#
+# class EmailPerson(Person):
+#     def __init__(self,name,email):
+#         super().__init__(name)
+#         self.email=email
+#
+#
+# eun=EmailPerson("eun","eunjihun")
+#
+# print(eun.name)
+# print(eun.email)
+
+# class Animal():
+#     def says(self):
+#         return 'I speak!'
+#
+# class Horse(Animal):
+#     def says(self):
+#         return "Neigh!"
+#
+# class Donkey(Animal):
+#     def says(self):
+#         return "Hee-haw!"
+#
+# class Mule(Donkey,Horse):
+#     pass
+#
+# class Hinny(Horse,Donkey):
+#     pass
+#
+# print(Mule.mro())
+#
+# print(Hinny.mro())
 
 
 
 
 
 
-class FlyingMixin:
-    def fly(self):
-        return f"{self.name}이(가) 하늘을 훨훨 날아갑니다~~"
-
-class SwimMixin():
-    def swim(self):
-        return  f"{self.name}이(가) 수영을 합니다"
-
-class Pokemon():
-    def __init__(self,name):
-        self.name=name
-
-class  Charizard(Pokemon,FlyingMixin):
-
-    pass
-
-class Gyarados(Pokemon,SwimMixin):
-    pass
-
-g1=Gyarados('가라도스')
-
-c1=Charizard('리자몽')
-
-print(c1.fly())
-print(g1.swim())
 
 
-#포케몬게임만들기
+
+
+
+
+
+
