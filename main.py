@@ -1,19 +1,36 @@
 
 
 
-def document_it(func):
-    def new_function(*args,**kwargs):
-        print("Running function:",func.__name__)
-        print("Positional arguments:",args)
-        print("Keyword argument:",kwargs)
-        result=func(*args,**kwargs)
-        print("Result:",result)
-        return result
-    return new_function
 
 
-def add_ints(a,b):
-    return a+b
-cooler_add_ints=document_it(add_ints)
 
-cooler_add_ints(3,5)
+# def f(n):
+#     result=1
+#     for i in range(2,n+1):
+#         result=result*i
+#     return result
+#
+# print(f(int(input())))
+
+
+import random
+
+# numbers=[]
+# for i in range(5):
+#     numbers.append(random.randint(1,100))
+
+numbers=[random.randint(1,100) for i in range(10)]
+print(numbers)
+try:
+    pick=int(input(f"Input index (0~{len(numbers)-1}) :"))
+
+    print(numbers[pick])
+except IndexError:
+    print("Out of range : Wrong index number")
+except ValueError:
+    print("Input Only Number~~")
+except Exception:
+    print("Error occurs")
+
+
+
